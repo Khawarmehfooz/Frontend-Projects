@@ -28,3 +28,6 @@ Khawar Mehfooz
 ## Acknowledgments
 Thank you to FreeCodeCamp for providing guidance and inspiration for some of these projects.
 
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
