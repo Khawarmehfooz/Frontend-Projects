@@ -17,7 +17,7 @@ The repository contains the following projects:
 
 ## Getting Started
 
-- To view these projects, simply clone the repository to your local machine using the following command:
+- To view these projects, simply clone the repository to your local machine using the following command:<br>
 `git clone https://github.com/Khawarmehfooz/html-css-projects.git`
 
 - Then, navigate to the project folder that you wish to view, and open the index.html file in your web browser.
