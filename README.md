@@ -16,6 +16,7 @@ The repository contains the following projects:
 - `peerlist-signup-form`: A sign-up form designed using HTML and CSS.
 - `product-preview-card`: A product preview card created using HTML and CSS.
 - `Chess Board`: Chess Board using HTML & CSS. Inspired by Chess.com game.
+- `Pricing Table`: Pricing Plan Table using HTML & CSS.
 
 ## Getting Started
 
