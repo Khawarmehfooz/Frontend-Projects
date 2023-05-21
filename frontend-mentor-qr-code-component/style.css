@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --primary-color: hsl(218, 44%, 22%);
+  --secondary-color: hsl(220, 15%, 55%);
+  --color-1: hsl(212, 45%, 89%);
+  --color-2: hsl(0, 0%, 100%);
+}
+html {
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: var(--color-1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  position: relative;
+  height: 30rem;
+  width: 20rem;
+  background-color: var(--color-2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  font-family: inherit;
+}
+#img-container {
+  position: relative;
+  padding: 15px;
+}
+img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+#heading {
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+}
+#heading h1 {
+  font-size: 23px;
+  color: var(--primary-color);
+  margin: 0;
+  line-height: normal;
+  padding: 0 15px;
+}
+#description p {
+  font-family: inherit;
+  font-weight: 400;
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 15px;
+  padding: 0 20px;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 540px) {
+  img {
+    height: 16rem;
+    margin-top: 15px;
+  }
+  #heading h4 {
+    padding: 5px 50px;
+  }
+  #description p {
+    padding: 0 30px;
+  }
+}

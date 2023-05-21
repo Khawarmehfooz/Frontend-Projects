@@ -1,123 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    :root{
-      --primary-color:hsl(218, 44%, 22%);
-      --secondary-color:hsl(220, 15%, 55%);
-      --color-1:hsl(212, 45%, 89%);
-      --color-2:hsl(0, 0%, 100%);
-    }
-    @media (max-width:2160px){
-       body{
-      background-color: var(--color-1);
-      max-width: 1440px;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-     font-family:'Outfit', sans-serif;
-     overflow: hidden;
+    <title>Frontend Mentor | QR code component</title>
 
-    }
-    main{
-      position: relative;
-      height: 23rem;
-      width: 15rem;
-      background-color: var(--color-2);
-      /* margin-bottom:rem; */
-      display: flex;
-      flex-direction: column;
-      /* justify-content: center; */
-      border-radius: 10px;
-      align-items: center;
-      font-family: inherit;
-    }
-    img{
-      position: relative;
-      align-items: center;
-      margin: 10px;
-      height: 13rem;
-      border-radius: 10px;
-      
-    }
-    #heading{
-      text-align: center;
-      font-weight: 700;
-      margin: 0;
-    }
-    #heading h4{
-      margin: 0;
-      line-height: normal;
-      padding:  0 15px;
-    }
-    #description p{
-      font-family: inherit;
-      font-weight: 400;
-      color: var(--secondary-color);
-      text-align: center;
-      font-size: 15px;
-      padding: 0 5px;
-    }
-    .attribution{
-      position: absolute;
-      bottom: 0;
-    }
-
-    }
-   
-    @media(max-width:540px){
-      body{
-        height: 100vh;
-      }
-      main{
-        height: 27rem;
-        width: 18rem;
-      }
-      img{
-        height: 16rem;
-        margin-top: 15px;
-      }
-      #heading h4{
-        padding: 5px 50px;
-      }
-      #description p{
-        padding: 0 30px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <div><img id="qr-img" src="/images/image-qr-code.png" alt=""></div>
-    <div id="heading">
-      <h4>Improve your front-end skills by building projects</h4>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="img-container">
+        <img id="qr-img" src="/images/image-qr-code.png" alt="" />
+      </div>
+      <div id="heading">
+        <h1>Improve your front-end skills by building projects</h1>
+      </div>
+      <div id="description">
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level.
+        </p>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://khawarmehfooz.com">Khawar Mehfooz</a>.
     </div>
-    <div id="description">
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.
-      </p>
-    </div>
-
-  </main>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://khawarmehfooz.com">Khawar Mehfooz</a>.
-  </div>
-</body>
+  </body>
 </html>
