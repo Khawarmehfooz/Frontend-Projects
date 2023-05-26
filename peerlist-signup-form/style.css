@@ -1,133 +1,125 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
-form{
-    border: 2px solid black;
-    height: 75vh;
-    width: 25vw;
-    margin: 6rem 0 5rem 0;
-    box-shadow: 4px 4px 0 #212121;
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 2rem 0 0 0;
-    text-align: center;
-    align-items: center;
-    
-    
+form {
+  border: 2px solid black;
+  height: 75vh;
+  width: 25vw;
+  margin: 6rem 0 5rem 0;
+  box-shadow: 4px 4px 0 #212121;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  align-items: center;
 }
-.title{
-    margin: 0 0 2rem 0;
-    text-align: center;
-
+.title {
+  margin: 0 0 2rem 0;
+  text-align: center;
 }
-.btn{
-    height: 3rem;
-    background-color: white;
-    border: 1px solid black;
-    width:85%;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    
+.btn {
+  height: 3rem;
+  background-color: white;
+  border: 1px solid black;
+  width: 85%;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
-#or{
-    margin-bottom: 1rem;
-    font-weight: 400;
-    font-size: large;
-    color: rgb(106 115 125/1);
+#or {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: large;
+  color: rgb(106 115 125/1);
 }
-input{
-    /* height: 3.5rem; */
-    line-height: 1.2rem;
-    width: 95%;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    border: none;
-    padding-top: 0.25rem 0.5rem 0.375rem ;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-
-
-
+input {
+  /* height: 3.5rem; */
+  line-height: 1.2rem;
+  width: 95%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border: none;
+  padding-top: 0.25rem 0.5rem 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
-label{
-    display: block;
-    text-align: start;
-    padding: 0.375rem 0.5rem 0;
-    margin-bottom: .3rem;
-    color: rgb(106 115 125/1);
-
+label {
+  display: block;
+  text-align: start;
+  padding: 0.375rem 0.5rem 0;
+  margin-bottom: 0.3rem;
+  color: rgb(106 115 125/1);
 }
-#email-div{
-    border: 1px solid black;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0.25rem;
-    margin-bottom: 1rem;
+#email-div {
+  border: 1px solid black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 5px;
 }
-#pass-div{
-    border: 1px solid black;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0.25rem;
-    margin-bottom: 2rem;
-
+#pass-div {
+  border: 1px solid black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  padding-bottom: 5px;
 }
-#btn-submit{
-    height: 2rem;
-    width: 8rem;
-    background-color: #00aa45;
-    color: white;
-    border: 2px solid rgb(33 150 83/1);
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: .875rem;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: .025rem;
-    text-align: center;
-    margin-bottom: 2rem;
+#btn-submit {
+  height: 2rem;
+  width: 8rem;
+  background-color: #00aa45;
+  color: white;
+  border: 2px solid rgb(33 150 83/1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.025rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
-input::placeholder{
-    color: rgb(106 115 125/1);;
+input::placeholder {
+  color: rgb(106 115 125/1);
 }
-#terms{
-    font-size: .75rem;
-    line-height: 1rem;
-    text-align: center;
-    font-weight: 300;
-    color:rgb(106 115 125/1);;;
+#terms {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  font-weight: 300;
+  color: rgb(106 115 125/1);
 }
-#terms a{
-    text-decoration: none;
-    color: rgb(30 135 75/1);
-    cursor: pointer;
+#terms a {
+  text-decoration: none;
+  color: rgb(30 135 75/1);
+  cursor: pointer;
 }
-#bottom-text{
-    font-size: 1rem;
-    margin-top: 2.5rem;
-    line-height: 1.25rem;
-    color: rgb(33 33 33/1);
-    font-weight: 600;
+#bottom-text {
+  font-size: 1rem;
+  margin-top: 2.5rem;
+  line-height: 1.25rem;
+  color: rgb(33 33 33/1);
+  font-weight: 600;
 }
-#bottom-text a{
-    text-decoration: none;
-    color: rgb(30 135 75/1);
-    cursor: pointer;
+#bottom-text a {
+  text-decoration: none;
+  color: rgb(30 135 75/1);
+  cursor: pointer;
 }
-@media(max-width:1024px){
-    form{
-        width: 80%;
-    }
-
+@media (max-width: 1024px) {
+  form {
+    width: 80%;
+  }
 }
