@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap");
+:root {
+  --primary-clr: #383838;
+  --secondary-clr: #00c5f1;
+  --accent-clr: #202020;
+  --table-even: #2e2e2e;
+  --text-clr: #d6d6d6;
+  --bg-clr: #505050;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  padding: 2rem;
+}
+html {
+  font-family: "Inter", sans-serif;
+}
+.flex {
+  display: flex;
+  gap: 0.5rem;
+}
+main {
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
+  padding: 1rem;
+  width: min(50rem, 95%);
+  margin-inline: auto;
+  border-radius: 6px;
+}
+.container {
+  background-color: var(--primary-clr);
+  border-radius: 6px;
+  padding: 1rem;
+}
+.calculator-container {
+  display: flex;
+  gap: 1.5rem;
+}
+.title {
+  font-size: clamp(18px, 22px, 26px);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+label,
+input,
+select {
+  display: block;
+}
+.calculator-inputs {
+  background-color: var(--primary-clr);
+  border-radius: 6px;
+  width: 45%;
+}
+.form-group {
+  padding: 1rem 0;
+  border-bottom: 1px dashed var(--text-clr);
+}
+.select-container {
+  border: 2px solid var(--text-clr);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+select {
+  background-color: var(--primary-clr);
+  color: var(--text-clr);
+  border: 0;
+  outline: none;
+  font-size: clamp(16px, 18px, 20px);
+  cursor: pointer;
+  width: 100%;
+}
+.annual-appreciation-label {
+  border: 1px solid var(--text-clr);
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0;
+
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.annual-appreciation-input {
+  visibility: hidden;
+}
+input[name="annual-appreciation"]:checked + .annual-appreciation-label {
+  border-color: var(--secondary-clr);
+}
+input[name="laverage"] {
+  /* margin-top: 2rem; */
+  visibility: hidden;
+}
+#laverage-label {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: fit-content;
+  cursor: pointer;
+}
+#laverage-label::after {
+  margin-top: 0.5rem;
+  content: "";
+  display: block;
+  height: 15px;
+  width: 40px;
+  border-radius: 15px;
+  background-color: var(--accent-clr);
+  position: absolute;
+}
+#laverage-label::before {
+  margin-top: 0.5rem;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 90%;
+  z-index: 9;
+}
+input[name="laverage"]:checked + #laverage-label::after {
+  background-color: white;
+}
+input[name="laverage"]:checked + #laverage-label::before {
+  right: 32px;
+  background-color: var(--accent-clr);
+}
+.output-graph {
+  background-color: var(--accent-clr);
+  min-height: 30px;
+  border-radius: 6px;
+  width: 55%;
+}
+table {
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  font-weight: 600;
+  background-color: var(--accent-clr);
+  padding: 0.5rem 1rem;
+}
+th:first-child {
+  border-radius: 6px 0 0 0;
+}
+th:last-child {
+  border-radius: 0 6px 0 0;
+}
+td {
+  padding: 0.7rem 1rem;
+}
+tr:nth-child(even) {
+  background-color: var(--table-even);
+}
+tr:nth-child(odd) {
+  background-color: var(--accent-clr);
+}
+.calculator-description {
+  margin: 0.5rem 0;
+}
+input[type="range"] {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .calculator-container {
+    flex-direction: column;
+  }
+  .calculator-inputs {
+    width: 100%;
+  }
+  .output-graph {
+    width: 100%;
+  }
+  th {
+    font-size: 14px;
+  }
+  td {
+    font-size: 13px;
+  }
+}
